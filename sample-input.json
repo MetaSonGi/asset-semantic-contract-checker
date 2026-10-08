@@ -1,0 +1,53 @@
+{
+  "contracts": {
+    "urn:demo:temperature": {
+      "kind": "temperature",
+      "min": -20,
+      "max": 100,
+      "required": true
+    },
+    "urn:demo:speed": {
+      "kind": "speed",
+      "min": 0,
+      "max": 2
+    }
+  },
+  "assets": [
+    {
+      "id": "oht-1",
+      "connected_to": [
+        "station-1"
+      ],
+      "properties": [
+        {
+          "semantic_id": "urn:demo:temperature",
+          "value": 303.15,
+          "unit": "K"
+        },
+        {
+          "semantic_id": "urn:demo:speed",
+          "value": 850,
+          "unit": "mm/s"
+        }
+      ]
+    },
+    {
+      "id": "station-1",
+      "connected_to": [
+        "missing-robot"
+      ],
+      "properties": [
+        {
+          "semantic_id": "urn:demo:temperature",
+          "value": 35,
+          "unit": "Cel"
+        },
+        {
+          "semantic_id": "urn:demo:speed",
+          "value": 3,
+          "unit": "m/s"
+        }
+      ]
+    }
+  ]
+}

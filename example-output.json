@@ -1,0 +1,36 @@
+{
+  "valid": false,
+  "normalized_properties": [
+    {
+      "asset_id": "oht-1",
+      "semantic_id": "urn:demo:temperature",
+      "value": 30.0,
+      "unit": "Cel"
+    },
+    {
+      "asset_id": "oht-1",
+      "semantic_id": "urn:demo:speed",
+      "value": 0.85,
+      "unit": "m/s"
+    },
+    {
+      "asset_id": "station-1",
+      "semantic_id": "urn:demo:temperature",
+      "value": 35,
+      "unit": "Cel"
+    }
+  ],
+  "errors": [
+    {
+      "asset_id": "station-1",
+      "semantic_id": "urn:demo:speed",
+      "reason": "value_out_of_range"
+    },
+    {
+      "asset_id": "station-1",
+      "target": "missing-robot",
+      "reason": "dangling_connection"
+    }
+  ],
+  "format": "local_semantic_contract_not_aas_certification"
+}

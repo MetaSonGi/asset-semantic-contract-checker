@@ -1,0 +1,36 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>장비 의미 모델 계약 검사기</title><style>body{font:16px/1.6 system-ui;max-width:1000px;margin:32px auto;padding:20px;background:#101b2b;color:#ecf4ff}pre{padding:24px;background:#192b40;border-radius:12px;white-space:pre-wrap;overflow-wrap:anywhere}h1{color:#80e4c5}</style><h1>장비 의미 모델 계약 검사기</h1><p>오프라인 샘플 계산 결과 · 실물 장비 연결 없음</p><pre>{
+  &quot;valid&quot;: false,
+  &quot;normalized_properties&quot;: [
+    {
+      &quot;asset_id&quot;: &quot;oht-1&quot;,
+      &quot;semantic_id&quot;: &quot;urn:demo:temperature&quot;,
+      &quot;value&quot;: 30.0,
+      &quot;unit&quot;: &quot;Cel&quot;
+    },
+    {
+      &quot;asset_id&quot;: &quot;oht-1&quot;,
+      &quot;semantic_id&quot;: &quot;urn:demo:speed&quot;,
+      &quot;value&quot;: 0.85,
+      &quot;unit&quot;: &quot;m/s&quot;
+    },
+    {
+      &quot;asset_id&quot;: &quot;station-1&quot;,
+      &quot;semantic_id&quot;: &quot;urn:demo:temperature&quot;,
+      &quot;value&quot;: 35,
+      &quot;unit&quot;: &quot;Cel&quot;
+    }
+  ],
+  &quot;errors&quot;: [
+    {
+      &quot;asset_id&quot;: &quot;station-1&quot;,
+      &quot;semantic_id&quot;: &quot;urn:demo:speed&quot;,
+      &quot;reason&quot;: &quot;value_out_of_range&quot;
+    },
+    {
+      &quot;asset_id&quot;: &quot;station-1&quot;,
+      &quot;target&quot;: &quot;missing-robot&quot;,
+      &quot;reason&quot;: &quot;dangling_connection&quot;
+    }
+  ],
+  &quot;format&quot;: &quot;local_semantic_contract_not_aas_certification&quot;
+}</pre></html>
